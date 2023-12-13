@@ -1,38 +1,29 @@
-Model Description
-A perceptron operates by taking binary inputs, applying weighted sums, and passing the result through an activation function to produce an output. The architecture consists of input nodes, weights assigned to inputs, a summation function, and an activation function. This model learns by adjusting weights based on errors during training, utilizing a learning algorithm like the perceptron learning rule.
+# Perceptron
 
-Notebook Structure
-1. Essential Imports
-The notebook begins with importing necessary libraries like NumPy, Pandas, Seaborn, Matplotlib, and Scikit-learn for data handling, visualization, and model evaluation.
+## Overview
 
-2. Building the Perceptron Class
-The notebook defines a Perceptron class responsible for modeling binary classification. Key methods include initialization, activation function, loss calculation, gradient approximation, weight updating through gradient descent, fitting the model, and prediction.
+The "Perceptron.ipynb" notebook explores the implementation and functionality of a perceptron, a fundamental single-layer neural network used for binary classification tasks. It demonstrates building a perceptron model from scratch and its application using the IBM Employee Attrition dataset.
 
-3. Preprocessing
-The dataset (IBM Employee Attrition) undergoes essential preprocessing steps:
+## Introduction
 
-Removal of variables with zero variance.
-Encoding categorical variables using LabelEncoder.
-Standardizing features to ensure uniform scales.
-4. Model Training and Evaluation
-The perceptron model is trained using the preprocessed dataset. Key steps include:
+A perceptron is a basic neural network comprising input nodes, weights, a summation function, and an activation function. This notebook introduces the perceptron model, detailing its architecture and learning process. It explains how the perceptron learns and makes predictions based on input features by adjusting weights during training.
 
-Data splitting into training and test sets.
-Instantiating and fitting the perceptron model using training data.
-Evaluating model performance through accuracy metrics, loss history, and confusion matrix visualization.
-5. Performance Analysis
-The notebook concludes with an analysis of the model's performance, displaying training and test accuracy scores, a scatter plot with decision boundary, confusion matrix, and a classification report.
+## Model Implementation
 
-Data Set
-https://www.kaggle.com/datasets/rohitsahoo/employee
-Watson Analytics Sample Data
+The notebook begins with essential imports and visualization libraries necessary for data processing, visualization, and evaluation. It then loads and preprocesses the IBM Employee Attrition dataset, preparing it for perceptron model training.
 
-Uncover the factors that lead to employee attrition and explore important questions such as ‘show me a breakdown of distance from home by job role and attrition’ or ‘compare average monthly income by education and attrition’. This is a fictional data set created by IBM data scientists
+### Building the Perceptron
 
-Content
-This the data about the employee on various factor influencing the attrition from the company.
-Predict the Attrition of an employee based on the various factor given
+It defines a Perceptron class for binary classification, outlining the functions for activation, loss calculation, gradient approximation, weight updates, and model fitting. The notebook showcases the training process and tracks the loss history during training.
 
-Conclusion
-The perceptron, while effective for linearly separable data, might experience reduced accuracy with complex, non-linear datasets like the IBMEmployeeAttrition dataset. However, its simplicity and computational efficiency make it suitable for simpler classification tasks with linearly separable data patterns.
+### Preprocessing
 
+The notebook covers dataset preprocessing steps, including dropping variables with zero variance, encoding categorical columns, feature selection, and standardizing features using z-score normalization for efficient perceptron training.
+
+## Performance Analysis
+
+It evaluates the trained perceptron model's performance by examining metrics such as accuracy scores, confusion matrices, and visualizing decision boundaries. It provides insights into the model's accuracy on training and test sets and analyzes classification reports.
+
+## Conclusion
+
+The "Perceptron.ipynb" notebook serves as an educational resource demonstrating the implementation and utilization of a perceptron model from scratch. It highlights the model's strengths, limitations, and its applicability in binary classification tasks using real-world data.
